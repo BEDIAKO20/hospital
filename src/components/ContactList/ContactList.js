@@ -15,30 +15,33 @@ function ContactList() {
   });
 
 
-  
-  useEffect( async () => {
-    try{
-      setState({...state, loading: true})
-       let response = await ContactService.getAllContacts();
 
-       setState({
-        ...state,
-        loading: false,
-        contacts: response.data
-       });
+  useEffect(() => {  
+    const asyncFetchDailyData = async () => {
+    try{  
 
+      setState({...state,  loading:true});
 
-      console.log(response.data)
-    }
-    catch(error){
+      let response = await ContactService.getAllContacts();
+
       setState({
         ...state,
         loading:false,
-        errorMessage:error.message
+        contacts: response.data,
+        filteredContacts:response.data
+      });  
 
-      });
-    }
-  }, [state]);
+      } 
+    catch(error){
+      setState( {
+         ...state,
+         loading:false,
+        errorMessage: error.message
+    });
+  }
+}
+  asyncFetchDailyData();
+}, []);
 
 
 
