@@ -13,23 +13,22 @@ function ContactList() {
     contacts: [],
     errorMessage: ''
   });
-
-
-
+  
   useEffect(() => {  
     const asyncFetchDailyData = async () => {
+      // console.log(asyncFetchDailyData)
     try{  
 
       setState({...state,  loading:true});
 
       let response = await ContactService.getAllContacts();
-
       setState({
         ...state,
         loading:false,
         contacts: response.data,
         filteredContacts:response.data
       });  
+      
 
       } 
     catch(error){
@@ -45,10 +44,15 @@ function ContactList() {
 
 
 
+
+
+
   let {loading,contacts,errorMessage} = state;
+  console.log(contacts)
   return (
     <React.Fragment>
       <pre>{JSON.stringify(contacts)}</pre>
+      
       <section className='contact-searh p-3'>
         <Container>
           <Row>
@@ -67,8 +71,8 @@ molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum</p>
               <Col md={6}>
       <Form.Group className="mb-2" controlId="formBasicName">
         <Form.Control type="text" placeholder="Search Name" 
-          name="text"
-          value={query.text}
+          // name="text"
+          // value={query.text}
         />
       </Form.Group>
       </Col>
