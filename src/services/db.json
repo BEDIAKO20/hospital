@@ -1,0 +1,70 @@
+{
+    "contacts":[
+        {
+            "id": "AA@#S123",
+            "name": "Dr.Bediako",
+            "photo": "https://cdn1.iconfinder.com/data/icons/user-pictures/101/malecostume-1024.png",
+            "mobile": "0244435763",
+            "email":"boadikoi446@gmail.com",
+            "title":"Software Engineer",
+            "Company":"HCL Technologies",
+            "groupId":"1"
+        },
+        {
+            "id": "ET23#YH",
+            "name": "Kofi Bediako",
+            "photo": "https://cdn-icons-png.flaticon.com/512/219/219988.png",
+            "mobile": "0552288681",
+            "email":"bediako666@gmail.com",
+            "title":"Youtuber",
+            "Company":"HCL ",
+            "groupId":"2"
+        },
+        {
+            "id": "DDF@H134",
+            "name": "Kojo Rajan",
+            "photo": "https://cdn-icons-png.flaticon.com/512/194/194828.png",
+            "mobile": "0505234893",
+            "email":"rajankojo34@gmail.com",
+            "title":"Freelancer",
+            "Company":" Engineer Technologies",
+            "groupId":"3"
+        },
+        {
+            "id": "GUX23@H3",
+            "name": "Ivan Kofi",
+            "photo": "https://cdn-icons-png.flaticon.com/512/236/236831.png",
+            "mobile": "0245613567",
+            "email":"Ivankofi20@gmail.com",
+            "title":"Software ",
+            "Company":"UiBrains Technologis",
+            "groupId":"4"
+        }
+    ],
+    "groups": [
+        {
+            "id":"1",
+            "name":"Colleague"
+        },
+        {
+            "id":"2",
+            "name":"Friend"
+        },
+        {
+            "id":"3",
+            "name":"Family"
+        },
+        {
+            "id":"4",
+            "name":"Service"
+        },
+        {
+            "id":"5",
+            "name":"Community"
+        },
+        {
+            "id":"6",
+            "name":"Social"
+        }
+    ]
+}
